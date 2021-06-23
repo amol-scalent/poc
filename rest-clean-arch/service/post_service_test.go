@@ -26,6 +26,10 @@ func (m *MockRepository) FindAll() ([]entity.Post, error) {
 	return result.([]entity.Post), args.Error(1)
 }
 
+// TODO:
+func (m *MockRepository) Delete(post *entity.Post) error {
+	return nil
+}
 func TestFindAll(t *testing.T) {
 
 	var id int64 = 1

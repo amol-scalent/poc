@@ -49,3 +49,7 @@ func (s *service) Create(post entity.Post) (*entity.Post, error) {
 func (s *service) FindAll() ([]entity.Post, error) {
 	return s.repo.FindAll()
 }
+
+func (s *service) Delete(entity *entity.Post) error {
+	return s.repo.Delete(entity)
+}
